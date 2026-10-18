@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Paddle Finder: Find the Right Pickleball Paddle | BestPicklePad</title>
+<meta name="description" content="Answer 4 quick questions and get matched with court-tested pickleball paddles for your level, style, arm and budget. Independent picks from BestPicklePad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2ec;--surface:#fff;--surface2:#f4f7f2;--ink:#14231a;--soft:#43564a;--line:#d5e0d4;--brand:#14532d;--brand-ink:#fff;--accent:#b7e01e;--accent-ink:#1d2b05;--rate-bg:#14532d;--rate-ink:#d9f99d;--note-bg:#fbf3d6;--note-ink:#4d4310;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b120d;--surface:#152219;--surface2:#1a2b1f;--ink:#eef5ec;--soft:#a9bfa9;--line:#2a4030;--brand:#2f9e5f;--brand-ink:#06130b;--accent:#c3f02e;--rate-bg:#b7e01e;--rate-ink:#1d2b05;--note-bg:#2b2810;--note-ink:#ece3a8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b120d;--surface:#152219;--surface2:#1a2b1f;--ink:#eef5ec;--soft:#a9bfa9;--line:#2a4030;--brand:#2f9e5f;--brand-ink:#06130b;--accent:#c3f02e;--rate-bg:#b7e01e;--rate-ink:#1d2b05;--note-bg:#2b2810;--note-ink:#ece3a8;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;font-size:17px;line-height:1.5}
+.app{max-width:520px;margin:0 auto;padding:22px 18px 40px}
+.screen{display:none}.screen.on{display:block}
+h1,h2,h3{font-family:"Barlow Condensed",system-ui,sans-serif;text-transform:uppercase;margin:0;line-height:1.05}
+h1{font-size:3rem;text-align:center;margin:18px 0 10px}h1 span{color:var(--brand)}
+.lede{text-align:center;color:var(--soft);max-width:36ch;margin:0 auto 20px;font-size:1.05rem}
+.trust{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;list-style:none;padding:0;margin:0 0 26px}
+.trust li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.85rem;font-weight:600;color:var(--soft)}.trust b{color:var(--ink)}
+.btn{appearance:none;border:0;cursor:pointer;font:inherit;font-weight:700;border-radius:14px}
+.btn:focus-visible,.opt:focus-visible,.back:focus-visible,a:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.primary{background:var(--brand);color:var(--brand-ink);font-size:1.15rem;padding:16px;width:100%}
+.ghost{background:var(--surface);color:var(--ink);border:2px solid var(--line);padding:13px;width:100%;font-size:1rem}
+.linkbtn{display:block;text-align:center;text-decoration:none;background:var(--surface2);color:var(--ink);border:2px solid var(--line);padding:13px;border-radius:14px;font-weight:700}
+.fine{text-align:center;color:var(--soft);font-size:.9rem;margin-top:12px}
+.top{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.back{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);width:40px;height:40px;border-radius:12px;font-size:1.1rem;cursor:pointer}
+.pw{flex:1}.pl{font-size:.82rem;font-weight:600;color:var(--soft);margin-bottom:5px}
+.bar{height:8px;background:var(--surface2);border:1px solid var(--line);border-radius:99px;overflow:hidden}.bar div{height:100%;background:var(--accent)}
+.qt{font-size:2rem;margin:22px 0 18px}
+.opts{display:grid;gap:11px}
+.opt{appearance:none;text-align:left;cursor:pointer;width:100%;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:16px 18px;font:inherit;color:var(--ink)}
+.opt:hover{border-color:var(--brand)}.opt b{display:block;font-size:1.1rem}.opt span{display:block;color:var(--soft);font-size:.93rem;margin-top:2px}
+.rh{text-align:center;padding-top:6px}.rh h2{font-size:2.2rem;margin-bottom:8px}.rh p{color:var(--soft);margin:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:18px}
+.chips span,.tag{background:var(--surface2);border:1px solid var(--line);border-radius:99px;padding:3px 10px;font-size:.8rem;font-weight:700;color:var(--soft)}
+.tag.b{background:var(--brand);color:var(--brand-ink);border-color:transparent}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:14px}
+.box h3{font-size:1.2rem;margin-bottom:8px}.box p{margin:0 0 8px;color:var(--soft);font-size:.97rem}
+.spec{display:grid;grid-template-columns:104px 1fr;gap:4px 10px;font-size:.96rem;margin:0}.spec dt{color:var(--soft)}.spec dd{margin:0;font-weight:600}
+.note{background:var(--note-bg);color:var(--note-ink);border-radius:12px;padding:11px 14px;margin:0 0 14px;font-size:.95rem}
+.m{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px}.m.first{border:2px solid var(--brand)}
+.mh{display:flex;gap:10px;align-items:flex-start}.rk{font-family:"Barlow Condensed",sans-serif;font-weight:700;background:var(--surface2);border:1px solid var(--line);border-radius:9px;padding:4px 8px;color:var(--soft)}
+.first .rk{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+.mn{flex:1;font-size:1.5rem}.rate{background:var(--rate-bg);color:var(--rate-ink);border-radius:11px;padding:5px 9px;text-align:center;min-width:54px}
+.rate b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:1.4rem;line-height:1}.rate i{font-style:normal;font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:11px 0 9px}.why{color:var(--soft);font-size:.97rem;margin:0 0 10px}
+.rv{font-weight:700;color:var(--brand);text-decoration:none}.rv:hover{text-decoration:underline}
+.acts{display:grid;gap:10px;margin-top:6px}.foot{text-align:center;color:var(--soft);font-size:.85rem;margin-top:16px}.foot a{color:var(--brand);font-weight:600}
+.sh{font-size:1.25rem;margin:20px 0 10px}
+@media (prefers-reduced-motion:no-preference){.screen.on{animation:r .25s ease both}@keyframes r{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<div class="app">
+<section class="screen on" id="s-start">
+  <h1>Paddle <span>Finder</span></h1>
+  <p class="lede">Four quick questions. We match you to paddles Dylan has tested, and we never show you one that’s over your budget.</p>
+  <ul class="trust"><li><b>400+</b> hours testing</li><li><b>80+</b> paddles evaluated</li><li><b>19</b> ranked for 2026</li><li><b>0</b> paid rankings</li></ul>
+  <button class="btn primary" id="go" type="button">Start the quiz</button>
+  <p class="fine">About 30 seconds. No email needed.</p>
+</section>
+<section class="screen" id="s-quiz" aria-live="polite">
+  <div class="top"><button class="back" id="back" type="button" aria-label="Go back">&#8592;</button><div class="pw"><div class="pl" id="pl"></div><div class="bar"><div id="pb"></div></div></div></div>
+  <h2 class="qt" id="qt"></h2><div class="opts" id="opts"></div>
+</section>
+<section class="screen" id="s-res">
+  <div class="rh"><h2 id="rt">Your matches</h2><p id="rs"></p></div>
+  <div class="chips" id="chips"></div>
+  <div id="guide"></div><div id="notes"></div><div id="matches"></div><div id="stretch"></div>
+  <div class="acts"><button class="btn ghost" id="again" type="button">Retake the quiz</button>
+  <a class="linkbtn" href="https://bestpicklepad.com/best-pickleball-paddles/" target="_blank" rel="noopener">See all 19 ranked paddles</a></div>
+  <p class="foot">Ratings are Dylan’s, from 400+ hours of on-court testing at <a href="https://bestpicklepad.com/best-pickleball-paddles/" target="_blank" rel="noopener">BestPicklePad.com</a>. No brand paid for a ranking. If you compete, check that a paddle is on the USA Pickleball approved list.</p>
+</section>
+</div>
+<script>
+var HUB_URL="https://bestpicklepad.com/best-pickleball-paddles/";
+/* Add each paddle’s own review link as url:"..." and a one-line flaw from your testing as flaw:"..." (both optional).
+   budget: under = under $100, mid = $100-$150, plus = $150+ */
+var PADDLES=[
+        { name: "JOOLA Ben Johns Perseus Pro V", rating: 9.8, bestFor: "Best Overall Power", spin: "High",
+          styles: ["power"], budget: "plus", levels: ["intermediate", "advanced"],
+          why: "Heavy plow-through and a Charged Carbon surface for elite put-away pop. Head-heavy, so it rewards clean contact — the highest-rated paddle Dylan has tested." },
+        { name: "TENVINA Hercules T700SC", rating: 9.7, bestFor: "Best Budget Spin Flagship", spin: "Elite",
+          styles: ["spin"], budget: "under", levels: ["beginner", "intermediate", "advanced"],
+          why: "Multi-layer T700SC matte carbon with elite-tier spin at a budget price. The elongated shape adds swing weight, so it plays bigger than it costs." },
+        { name: "Vatic Pro Prism Flash", rating: 9.6, bestFor: "Best Budget Control", spin: "High",
+          styles: ["control", "allaround"], budget: "under", levels: ["beginner", "intermediate", "advanced"],
+          why: "Soft, cold-molded build that kills harsh vibrations, with a light, quick swing for rapid kitchen resets and a foam-injected perimeter for stability. Dylan's best under-$100 pick overall." },
+        { name: "CRBN TruFoam Genesis", rating: 9.5, bestFor: "Best Premium Control", spin: "Elite",
+          styles: ["control"], budget: "plus", levels: ["intermediate", "advanced"],
+          why: "A honeycomb-free TruFoam core under Toray T700 carbon: balanced swing feel, elite spin tier, and the most composed touch game in the premium control class." },
+        { name: "Selkirk Labs Boomstik", rating: 9.5, bestFor: "Best Pure Power", spin: "Elite",
+          styles: ["power"], budget: "plus", levels: ["intermediate", "advanced"],
+          why: "BoomCore PureFoam with an EVA ring and InfiniGrit surface — elite spin tier paired with the purest power output on the list." },
+        { name: "Holbrook Power Pro E", rating: 9.5, bestFor: "Best Power & Control Balance", spin: "High",
+          styles: ["power", "allaround"], budget: "plus", levels: ["intermediate", "advanced"],
+          why: "Force-Tec T700 carbon over an edgecraft foam core, tuned for a balanced, sweet-spot-friendly swing — power when you swing, control when you don't." },
+        { name: "Vatic Pro V-Sol Pro", rating: 9.5, bestFor: "Best Budget Power", spin: "High",
+          styles: ["power"], budget: "mid", levels: ["beginner", "intermediate", "advanced"],
+          why: "Full EPP foam core with an EVA outer ring in the Flash shape: balanced and controllable, with real drive power that undercuts the flagship power paddles on price." },
+        { name: "Osmo Elite Spin T700", rating: 9.5, bestFor: "Best Ultra-Budget Spin", spin: "Elite",
+          styles: ["spin"], budget: "under", levels: ["beginner", "intermediate", "advanced"], provisional: true,
+          why: "Raw T700 carbon with an elite spin tier at an ultra-budget price. Light and kitchen-focused. Early verdict from Dylan's October testing — provisional while long-term grit checks finish." },
+        { name: "Honolulu J2CR 16mm", rating: 9.4, bestFor: "Best All-Court Runner-Up", spin: "High",
+          styles: ["allaround", "control"], budget: "plus", levels: ["intermediate", "advanced"],
+          why: "Gen 4.5 multi-density EPP foam with a CFC carbon face: balanced and controllable everywhere on court — the runner-up all-court pick behind Dylan's top choice." },
+        { name: "CRBN 3X Power Series", rating: 9.4, bestFor: "Best Thermoformed Power & Reach", spin: "High",
+          styles: ["power"], budget: "plus", levels: ["intermediate", "advanced"],
+          why: "Elongated unibody thermoformed build in Toray T700 carbon: head-heavy, driving swing feel with extra reach for counters and overheads." },
+        { name: "JOOLA Pro IV", rating: 9.2, bestFor: "Best Power Runner-Up", spin: "High",
+          styles: ["power"], budget: "plus", levels: ["intermediate", "advanced"],
+          why: "TechFlex build with a HyperFoam edge wall in an elongated shape — head-heavy driving power, a step behind the Perseus Pro V but easier on the wallet." },
+        { name: "11SIX24 Jelly Bean", rating: 9.2, bestFor: "Best Budget Control Under $100", spin: "Very High",
+          styles: ["control"], budget: "under", levels: ["beginner", "intermediate"],
+          why: "Triple-layer CFC carbon with fiberglass in an elongated 16mm shape: quick through the hands with a very high spin tier, built for placement players on a budget." },
+        { name: "FRIDAY Aura Pro", rating: 9.1, bestFor: "Best All-Court Under $200", spin: "Very High",
+          styles: ["allaround"], budget: "plus", levels: ["intermediate", "advanced"],
+          why: "Double-thermoformed foam unibody in an elongated shape: a driving, confident swing feel and a very high spin tier for all-court players under $200." },
+        { name: "Franklin C45 Dynasty", rating: 9.1, bestFor: "Best Power Serve Leverage", spin: "High",
+          styles: ["power"], budget: "plus", levels: ["intermediate", "advanced"],
+          why: "Elongated PowerFlex polymer core with a dual foam perimeter — head-heavy leverage that turns serves and drives into free points." },
+        { name: "Six Zero Black Opal", rating: 9.0, bestFor: "Best All-Court Overall", spin: "Elite",
+          styles: ["allaround", "control", "spin"], budget: "plus", levels: ["beginner", "intermediate", "advanced"], topPick: true,
+          why: "Dylan's top pick. The Diamond Tough carbon face held its grit through 25+ hours of testing, and the G4 aerospace foam core pairs kitchen touch with real baseline pop." },
+        { name: "Six Zero Ruby", rating: 9.0, bestFor: "Best Feel-First Control", spin: "High",
+          styles: ["control"], budget: "plus", levels: ["intermediate", "advanced"],
+          why: "A 100% aramid fiber face over a honeycomb core that stays quick through hand battles — the feel-first control paddle for players who win at the kitchen line." },
+        { name: "HEAD Radical Elite", rating: 9.0, bestFor: "Best for Tennis Crossovers", spin: "Entry-Level",
+          styles: ["allaround"], budget: "under", levels: ["beginner"],
+          why: "Widebody fiberglass face on a 15mm honeycomb core with an ergo octagonal handle — the familiar, forgiving shape that makes tennis players feel at home on day one." },
+        { name: "MTEN Power Set", rating: 8.8, bestFor: "Best for Total Beginners", spin: "Entry-Level",
+          styles: ["allaround"], budget: "under", levels: ["beginner"],
+          why: "A USAP-approved 4-paddle fiberglass bundle with a widebody 16mm shape — everything a new group needs to start playing today, nothing you outgrow in a week." },
+        { name: "Diadem Hero V2", rating: 8.3, bestFor: "Best Under $60", spin: "Entry-Level",
+          styles: ["allaround"], budget: "under", levels: ["beginner"],
+          why: "A wide-face fiberglass starter kit — two paddles, balls, and a bag — at the lowest price on the list. The cheapest honest way to find out if pickleball sticks." }
+      ];
+
+var Q=[
+ {k:"level",t:"What’s your skill level?",o:[["beginner","Beginner (3.0 and below)","Still building consistency, forgiveness matters"],["intermediate","Intermediate (3.5–4.0)","Steady rallies, shots still developing"],["advanced","Advanced (4.5+)","Refined technique, you know what you want"]]},
+ {k:"style",t:"What’s your main playing style?",o:[["control","Control","Win with placement, dinks and resets"],["power","Power","Take the ball early and drive it"],["spin","Spin","Topspin and slice to move the ball around"],["allaround","All-around","Mix it up depending on the point"]]},
+ {k:"arm",t:"Any elbow, wrist or shoulder trouble?",o:[["yes","Yes, it bothers me regularly","We’ll steer you away from stiff, head-heavy paddles"],["some","Sometimes, after long sessions","Worth avoiding the harshest builds"],["no","No","Full range of paddles"]]},
+ {k:"budget",t:"What’s your budget?",o:[["under","Under $100","We’ll only show paddles at or under this"],["mid","$100–$150","Includes everything under $100 too"],["plus","$150 and up","Everything on the list"]]}
+];
+var GUIDE={
+ control:{n:"control",shape:"Wide or standard",core:"16mm, thicker cores are generally softer",weight:"Midweight, about 7.8 to 8.2 oz",face:"Carbon or fiberglass, moderate texture",flaw:"You give up free power. On put-aways you generate the pace yourself."},
+ power:{n:"power",shape:"Elongated",core:"13 to 14mm, thinner cores add pop",weight:"Mid to heavy, about 8.0 to 8.5 oz",face:"Stiffer carbon or fiberglass",flaw:"Smaller sweet spot, and mishits feel harsh. Thin, stiff builds are also harder on elbows."},
+ spin:{n:"spin",shape:"Standard or hybrid",core:"14 to 16mm",weight:"Midweight, about 7.8 to 8.3 oz",face:"Textured carbon, such as raw carbon",flaw:"Textured faces can feel less predictable on touch shots at first, and texture can fade over time."},
+ allaround:{n:"all-around",shape:"Standard or hybrid",core:"14 to 16mm",weight:"Midweight, about 7.8 to 8.3 oz",face:"Carbon or fiberglass, moderate texture",flaw:"Balanced means no standout strength. If you always want more spin or pop, move toward that style."}
+};
+var RANK={under:0,mid:1,plus:2},A={},cur=0;
+var $=function(i){return document.getElementById(i)};
+function show(n){["start","quiz","res"].forEach(function(s){$("s-"+s).classList.toggle("on",s===n)});window.scrollTo(0,0)}
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+
+function ask(){
+  var q=Q[cur];$("pl").textContent="Question "+(cur+1)+" of "+Q.length;$("pb").style.width=((cur+1)/Q.length*100)+"%";
+  $("qt").textContent=q.t;$("back").style.visibility=cur?"visible":"hidden";
+  var w=$("opts");w.innerHTML="";
+  q.o.forEach(function(o){var b=document.createElement("button");b.type="button";b.className="opt";
+    b.innerHTML="<b>"+esc(o[1])+"</b><span>"+esc(o[2])+"</span>";
+    b.onclick=function(){A[q.k]=o[0];A[q.k+"L"]=o[1];if(cur<Q.length-1){cur++;ask()}else{results();show("res")}};
+    w.appendChild(b)})
+}
+function styleHit(p){
+  if(A.style==="allaround")return true;
+  if(p.styles.indexOf(A.style)>-1)return true;
+  return A.style==="spin"&&(p.spin==="Elite"||p.spin==="Very High");
+}
+function score(p){
+  var s=p.rating;
+  if(p.styles.indexOf(A.style)>-1)s+=6;
+  else if(A.style==="allaround"&&p.styles.length>1)s+=2;
+  else if(A.style==="spin"&&(p.spin==="Elite"||p.spin==="Very High"))s+=4;
+  if(p.levels.indexOf(A.level)>-1)s+=3;else if(A.level==="beginner")s-=4;
+  var powerOnly=p.styles.length===1&&p.styles[0]==="power";
+  if(A.arm==="yes"){if(powerOnly)s-=4;if(p.styles.indexOf("control")>-1)s+=1}
+  else if(A.arm==="some"&&powerOnly)s-=2;
+  return s;
+}
+function card(p,i,label){
+  var t='<span class="tag b">'+esc(p.bestFor)+'</span><span class="tag">Spin tier: '+esc(p.spin)+'</span>';
+  if(p.topPick)t+='<span class="tag">★ Dylan’s top pick</span>';
+  if(p.provisional)t+='<span class="tag">Provisional, early verdict</span>';
+  var warn="";
+  if(A.arm!=="no"&&p.styles.indexOf("power")>-1)warn='<div class="note" style="margin:0 0 10px">Heads up for your arm: this one plays head-heavy or stiff. Try before you buy.</div>';
+  var fl=p.flaw?'<p class="why"><b>The catch:</b> '+esc(p.flaw)+'</p>':"";
+  return '<article class="m'+(i===0?" first":"")+'"><div class="mh"><span class="rk">'+esc(label||"#"+(i+1))+'</span><h3 class="mn">'+esc(p.name)+'</h3><div class="rate"><b>'+p.rating.toFixed(1)+'</b><i>Rating</i></div></div><div class="tags">'+t+'</div>'+warn+'<p class="why">'+esc(p.why)+'</p>'+fl+'<a class="rv" href="'+esc(p.url||HUB_URL)+'" target="_blank" rel="noopener">Read Dylan’s review</a></article>';
+}
+function results(){
+  $("chips").innerHTML=Q.map(function(q){return"<span>"+esc(A[q.k+"L"])+"</span>"}).join("");
+  var cap=RANK[A.budget];
+  var pool=PADDLES.filter(function(p){return RANK[p.budget]<=cap});
+  var byScore=function(a,b){var d=score(b)-score(a);return d||b.rating-a.rating};
+  var top=pool.slice().sort(byScore).slice(0,3);
+  var g=GUIDE[A.style];
+  var h='<div class="box"><h3>What to look for in a '+g.n+' paddle</h3><dl class="spec"><dt>Shape</dt><dd>'+esc(g.shape)+'</dd><dt>Core</dt><dd>'+esc(g.core)+'</dd><dt>Weight</dt><dd>'+esc(g.weight)+'</dd><dt>Face</dt><dd>'+esc(g.face)+'</dd></dl><p style="margin:10px 0 0"><b>The trade-off:</b> '+esc(g.flaw)+'</p></div>';
+  if(A.arm!=="no")h+='<div class="note">Because your arm bothers you, go for thicker, softer-feeling builds and skip stiff, thin-core paddles. If pain continues, see a doctor or physio, because a paddle won’t fix it.</div>';
+  $("guide").innerHTML=h;
+  var hit=top.some(styleHit);
+  var n="";
+  if(!hit)n='<div class="note">Nothing on our list at this budget matches your style closely, so these are the best-rated paddles you can afford. The closest match one price tier up is shown below.</div>';
+  $("notes").innerHTML=n;
+  $("rs").textContent=top.length+" tested paddles at or under your budget, best match first.";
+  $("matches").innerHTML=top.map(function(p,i){return card(p,i)}).join("");
+  var up=PADDLES.filter(function(p){return RANK[p.budget]>cap&&styleHit(p)}).sort(byScore)[0];
+  $("stretch").innerHTML=(!hit&&up)?'<h3 class="sh">A step up in price</h3>'+card(up,0,"Stretch"):"";
+}
+$("go").onclick=function(){cur=0;A={};ask();show("quiz")};
+$("back").onclick=function(){if(cur>0){cur--;ask()}};
+$("again").onclick=function(){cur=0;A={};show("start")};
+</script>
+</body>
+</html>
